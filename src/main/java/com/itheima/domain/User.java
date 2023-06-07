@@ -5,9 +5,9 @@ import java.util.Date;
 
 public class User implements Serializable {
     private Integer uuid;
-    private String username;
+    private String userName;
     private String password;
-    private String realname;
+    private String realName;
     private String gender;
     private Date birthday;
 
@@ -19,12 +19,12 @@ public class User implements Serializable {
         this.uuid = uuid;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -35,12 +35,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getRealname() {
-        return realname;
+    public String getRealName() {
+        return realName;
     }
 
-    public void setRealname(String realname) {
-        this.realname = realname;
+    public void setRealName(String realName) {
+        this.realName = realName;
     }
 
     public String getGender() {
@@ -63,9 +63,9 @@ public class User implements Serializable {
     public String toString() {
         return "User{" +
                 "uuid=" + uuid +
-                ", username='" + username + '\'' +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", realname='" + realname + '\'' +
+                ", realName='" + realName + '\'' +
                 ", gender='" + gender + '\'' +
                 ", birthday=" + birthday +
                 '}';
