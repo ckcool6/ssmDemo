@@ -1,6 +1,7 @@
 package com.itheima.dao;
 
 import com.itheima.domain.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -10,5 +11,5 @@ public interface UserDao {
     public boolean delete(Integer uuid);
     public User get(Integer uuid);
     public List<User> getAll();
-    public User getByUserNameAndPassWord(String username, String password);
+    public User getByUserNameAndPassWord(@Param("username") String username, @Param("password") String password);
 }
