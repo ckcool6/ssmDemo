@@ -16,5 +16,7 @@ public interface UserDao {
     public boolean delete(Integer uuid);
     public User get(Integer uuid);
     public List<User> getAll();
-    public User getByUserNameAndPassWord(@Param("userName") String userName, @Param("password") String password);
+
+    public User getByUserNameAndPassword(@Param("userName") String userName, @Param("password") String password);
+
 }

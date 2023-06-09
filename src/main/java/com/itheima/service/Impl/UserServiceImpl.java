@@ -34,12 +34,12 @@ public class UserServiceImpl implements UserService {
     }
 
     public PageInfo<User> getAll(int page, int size) {
-        PageHelper.startPage(page,size);
+        PageHelper.startPage(page, size);
         List<User> all = userDao.getAll();
         return new PageInfo<User>(all);
     }
 
     public User login(String userName, String password) {
-        return userDao.getByUserNameAndPassWord(userName, password);
+        return userDao.getByUserNameAndPassword(userName, password);
     }
 }
