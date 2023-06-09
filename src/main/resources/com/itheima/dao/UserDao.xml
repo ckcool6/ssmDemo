@@ -31,7 +31,7 @@
 
     <!--登录-->
     <select id="getByUserNameAndPassword" resultType="user" >
-        select * from user where username=#{username} and password=#{password}
+        select * from user where userName=#{userName} and password=#{password}
     </select>
 
 </mapper>

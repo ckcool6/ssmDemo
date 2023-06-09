@@ -8,7 +8,7 @@ public class User implements Serializable {
     private String userName;
     private String password;
     private String realName;
-    private String gender;
+    private Integer gender;
     private Date birthday;
 
     public Integer getUuid() {
@@ -43,11 +43,11 @@ public class User implements Serializable {
         this.realName = realName;
     }
 
-    public String getGender() {
+    public Integer getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Integer gender) {
         this.gender = gender;
     }
 
